@@ -1,0 +1,217 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: linear-gradient(90deg,#4d739886,#a774648a);
+}
+
+h2, h3, h4, nav.item, footer{
+    text-align: center;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+.collapse {
+    margin-left: 4%;
+
+}
+
+.nav-item {
+    color: whitesmoke;
+    font-weight: bold;
+    padding-right: 45px;
+}
+
+header {
+    background: url(headerRun.jpg)no-repeat 50% 50%;
+    background-size: cover;
+    height: 100vh;
+    border-radius: 0px 0px 20px 20px;
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 5em;
+    padding: 200px 0 0 20%;
+    text-shadow: -3px 3px 2px #BCF5A9;
+    animation: titre ease 3.5s;
+}
+
+@keyframes titre {
+    0%{
+        opacity: 0;
+        transform: translateX(-680px);
+    }
+    100%{
+        opcatity: 1;
+        transform: translateX(0px);
+    }
+}
+
+#leftPart {
+    background-color: #a77464c5;
+    border-radius: 20px;
+    padding: 25px;
+    margin-top: 110px;
+}
+
+.elements {
+    padding: 70px 0;
+}
+
+.elements img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.elements p {
+    font-size: 1.2em;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    padding-right: 20px;
+}
+
+.elements .button {
+    text-align: right;
+    margin: 15px 4% 0 0;
+}
+
+#rightPart {
+    background-color: #4d7398c0;
+    border-radius: 20px;
+    padding: 25px;
+    margin-top: 110px;
+}
+
+.tips {
+    height: 200px;
+    width: 200px;
+    margin: 20px auto;
+}
+
+.tips h4 {
+    position: relative;
+    color: rgb(2, 14, 2);
+    top: 50%;
+    transform: translateY(-50%);
+    text-shadow: 1px 1px 0 #BCF5A9,1px -1px 0 #BCF5A9,-1px 1px 0 #BCF5A9,-1px -1px 0 #BCF5A9,1px 0px 0 #BCF5A9,0px 1px 0 #BCF5A9,-1px 0px 0 #BCF5A9,0px -1px 0 #BCF5A9;
+}
+
+.tips:hover {
+    transform: scale(1.1);
+    opacity: 0.7;
+    transition: ease-out 0.2s;
+}
+
+#newsletter {
+    background: url(courseGroupe.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    height: 370px;
+    width: 70%;
+    min-width: 450px;
+    margin: 110px auto;
+    border-radius: 50%;
+    margin-bottom: 70px;
+}
+
+#newsletter h4 {
+    margin-top: 15px;
+    padding: 100px 0 20px 0;
+    font-size: 2em;
+    text-shadow:  1px 1px 0 #BCF5A9,1px -1px 0 #BCF5A9,-1px 1px 0 #BCF5A9,-1px -1px 0 #BCF5A9,1px 0px 0 #BCF5A9,0px 1px 0 #BCF5A9,-1px 0px 0 #BCF5A9,0px -1px 0 #BCF5A9;
+}
+
+#newsletter .input-group {
+    width: 40%;
+    min-width: 350px;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #399459;
+    padding: 15px 0 4px 0;
+}
+
+footer img {
+    width: 100px;
+    height: 100px;
+}
+
+@media screen and (max-width: 990px) {
+    #rightPart {
+        display: flex;
+        margin-top: 10px;
+    }
+    #rightPart h2 {
+        display: none;
+    }
+    .tips {
+        height: 130px;
+        width: 130px;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    h1 {
+        font-size: 3em;
+    }
+    h2 {
+        margin-bottom: 50px;
+    }
+    .elements {
+        padding: 30px 0;
+        
+    }
+    .elements img {
+        max-width: 160px;
+        max-height: 160px;
+        margin-top: 40px;
+        margin-left: -25px;
+    }
+    .tips {
+        height: 100px;
+        width: 100px;
+    }
+    .tips h4 {
+        font-size: 0.8em;
+    }
+    #rightPart{
+        padding: 0 5px;
+    }
+    #newsletter {
+        margin-top: 50px;
+    }
+    #newsletter h4 {
+        font-size: 1.6em;
+        width: 300px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .elements {
+        padding: 15px 0;
+        text-align: center;
+    }
+    .elements img {
+        margin-bottom: 20px;
+    }
+    nav {
+        display: none !important;
+    }
+    #rightPart{
+        height: 350px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .tips {
+        height: 130px;
+        width: 130px;
+    }
+}
